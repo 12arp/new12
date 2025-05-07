@@ -1,0 +1,338 @@
+.admin-panel {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem 1rem;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: #222;
+}
+
+.admin-header {
+  background: #f8f6ff;
+  border-radius: 12px;
+  padding: 1.5rem 2rem 1.2rem 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 2px 12px #5a3ff61a;
+}
+
+.admin-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-header-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #5a3ff6;
+  margin: 0;
+}
+
+.admin-header-buttons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.home-button, .logout-button {
+  background: #fff;
+  color: #5a3ff6;
+  border: 1.5px solid #5a3ff6;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+.home-button svg {
+  width: 20px;
+  height: 20px;
+}
+.home-button:hover, .logout-button:hover {
+  background: #5a3ff6;
+  color: #fff;
+}
+
+.error {
+  background: #ffeaea;
+  color: #b80000;
+  border: 1.5px solid #ffb3b3;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+.success {
+  background: #eaffea;
+  color: #1a7f1a;
+  border: 1.5px solid #b3ffb3;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.admin-form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #5a3ff61a;
+  padding: 2rem 2.5rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.admin-form input[type="text"],
+.admin-form input[type="file"],
+.admin-form textarea {
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #e2e0f7;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #f8f6ff;
+  resize: none;
+}
+
+.admin-form input[type="text"]:focus,
+.admin-form textarea:focus {
+  border: 1.5px solid #5a3ff6;
+  outline: none;
+}
+
+.image-preview {
+  margin-top: 0.7rem;
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #5a3ff633;
+  border: 1.5px solid #e2e0f7;
+}
+
+.additional-images {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+.image-preview-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-preview-container img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1.5px solid #e2e0f7;
+}
+.image-preview-container button {
+  margin-top: 0.3rem;
+  background: #ffb3b3;
+  color: #b80000;
+  border: none;
+  border-radius: 6px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.feature-input, .specification-inputs {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.feature-input input, .specification-inputs input {
+  flex: 1;
+}
+.feature-input button, .specification-inputs button {
+  background: #ffb3b3;
+  color: #b80000;
+  border: none;
+  border-radius: 6px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+.admin-form button[type="button"] {
+  background: #f8f6ff;
+  color: #5a3ff6;
+  border: 1.5px solid #5a3ff6;
+  border-radius: 8px;
+  padding: 0.4rem 1.1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.admin-form button[type="button"]:hover {
+  background: #5a3ff6;
+  color: #fff;
+}
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.submit-button {
+  background: #5a3ff6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #5a3ff633;
+  transition: background 0.2s, transform 0.1s;
+}
+.submit-button:disabled {
+  background: #bdb8f6;
+  cursor: not-allowed;
+}
+.cancel-button {
+  background: #fff;
+  color: #5a3ff6;
+  border: 1.5px solid #5a3ff6;
+  border-radius: 8px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.cancel-button:hover {
+  background: #5a3ff6;
+  color: #fff;
+}
+
+.products-list {
+  margin-top: 2.5rem;
+}
+.products-list h2 {
+  color: #5a3ff6;
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #5a3ff61a;
+  padding: 1.2rem 1rem 1.5rem 1rem;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+.product-card img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.7rem;
+  border: 1.5px solid #e2e0f7;
+}
+.product-card h3 {
+  font-size: 1.1rem;
+  color: #181a2a;
+  font-weight: 700;
+  margin: 0 0 0.3rem 0;
+}
+.product-card p {
+  font-size: 0.97rem;
+  color: #444;
+  margin: 0 0 0.7rem 0;
+  text-align: center;
+}
+.edit-btn, .delete-btn {
+  background: #f8f6ff;
+  color: #5a3ff6;
+  border: 1.5px solid #5a3ff6;
+  border-radius: 8px;
+  padding: 0.4rem 1.1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.edit-btn:hover {
+  background: #5a3ff6;
+  color: #fff;
+}
+.delete-btn {
+  background: #ffb3b3;
+  color: #b80000;
+  border: none;
+  margin-left: 0.5rem;
+}
+.delete-btn:hover {
+  background: #b80000;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .admin-panel {
+    padding: 1rem 0.2rem 2rem 0.2rem;
+  }
+  .admin-header {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+  .admin-form {
+    padding: 1rem 0.5rem;
+  }
+  .products-grid {
+    gap: 1rem;
+  }
+  .product-card {
+    width: 95vw;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .feature-input,
+  .specification-inputs {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.3rem;
+  }
+  .feature-input button,
+  .specification-inputs button {
+    width: 100%;
+    margin-top: 0.2rem;
+  }
+  .home-button,
+  .logout-button {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.7rem;
+    min-width: 80px;
+    border-radius: 6px;
+    gap: 0.3rem;
+  }
+  .home-button svg {
+    width: 16px;
+    height: 16px;
+  }
+} 

@@ -1,0 +1,64 @@
+.dealer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3rem 6vw;
+  background-color: #f5f0ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0b0033;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dealer-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  max-width: 500px;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.dealer-section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #5a3ff6;
+}
+
+.dealer-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.dealer-benefits li {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.dealer-benefits li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #4b2aad;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.dealer-cta-image img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}

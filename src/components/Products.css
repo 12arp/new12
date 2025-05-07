@@ -1,0 +1,132 @@
+.products-section {
+  min-height: auto;
+  padding: 4rem 1rem 3rem;
+  background: #f8f6ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.products-subheading {
+  color: #5a3ff6;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.products-heading {
+  color: #010326;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.products-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.explore-more-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.explore-more-button {
+  padding: 0.8rem 2rem;
+  background-color: #11088C;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+
+  box-shadow: 0 2px 8px #5a3ff6;
+  border: 1px #f8f6ff ;
+}
+
+.explore-more-button:hover {
+  background-color: #2a2d42;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .products-heading {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .products-list {
+    gap: 1.5rem;
+    padding: 0 10px;
+  }
+
+  .explore-more-container {
+    margin-top: 2rem;
+  }
+
+  .explore-more-button {
+    padding: 0.7rem 1.6rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .products-section {
+    padding: 2rem 1rem 2rem;
+  }
+
+  .products-subheading {
+    font-size: 0.8rem;
+  }
+
+  .products-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .products-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .explore-more-container {
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 3rem;
+  }
+
+
+  .explore-more-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+
+.products-section,
+.products-heading,
+.products-list,
+.explore-more-button,
+.loading,
+.error-message {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}

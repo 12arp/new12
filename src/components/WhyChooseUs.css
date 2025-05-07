@@ -1,0 +1,120 @@
+.why-choose-section {
+  min-height: auto;
+  padding-top: 1rem;
+  background: #f8f6ff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.why-choose-section p {
+  color: #5a3ff6;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.why-choose-section h2 {
+  color: #010326;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 5rem;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.features-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+  
+}
+
+.feature-card {
+  background: #f8f6ff;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  width: 300px;
+  height: 300px;
+  /* box-shadow: 0 4px 16px #5a3ff6; */
+  border: 2px solid #11088C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.feature-title {
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+  font-size: 1.3rem;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.feature-desc {
+  color: #555;
+  font-size: 1.08rem;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+@media (max-width: 600px) {
+  .features-list, .benefits-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .feature-card, .benefit-card {
+    width: 85vw;
+    max-width: 300px;
+  }
+  .feature-card {
+    box-shadow: 0 2px 6px #5a3ff633;
+  }
+} 
+.benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 16px #5a3ff6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-icon-1 {
+  font-size: 2.4rem;
+  color: #42FB35;
+ 
+}
+
+.card-icon-2 {
+  font-size: 2.4rem;
+  color: #FB1657;
+ 
+}
+
+.card-icon-3 {
+  font-size: 2.4rem;
+  color: #D9840D;
+ 
+}
+
+.card-icon-4 {
+  font-size: 2.4rem;
+  color: #5A38F2;
+ 
+}
+
+.card-icon-5 {
+  font-size: 2.4rem;
+  color: #010326;
+ 
+}
+
+.why-choose-section p {
+  font-size: 0.8rem;
+}

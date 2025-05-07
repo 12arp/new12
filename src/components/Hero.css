@@ -1,0 +1,148 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  padding: 2rem 4vw;
+  background: #f6f1ff;
+  gap: 2rem;
+}
+
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.highlight {
+  background: linear-gradient(to right, #5a3ff6, #7b5ffb);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.dark-text {
+  color: #222;
+}
+
+.hero-content p {
+  color: #444;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.call-btn, .whatsapp-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.call-btn {
+  background-color: #1a0dab;
+  color: #fff;
+  box-shadow: 0 4px 12px #1a0dab33;
+}
+
+.whatsapp-btn {
+  background-color: #25d366;
+  color: #fff;
+  box-shadow: 0 4px 12px #25d36633;
+}
+
+.call-btn:hover {
+  background-color: #0a083b;
+  transform: translateY(-2px) scale(1.03);
+}
+
+.whatsapp-btn:hover {
+  background-color: #128c4b;
+  transform: translateY(-2px) scale(1.03);
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px #5a3ff6aa;
+  border: 2px solid #f6f1ff;
+}
+
+.btn-text {
+  display: inline;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  .btn-text {
+    display: none;
+  }
+
+  .call-btn, .whatsapp-btn {
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    padding: 0;
+    font-size: 1.2rem;
+    border-radius: 50%;
+  }
+}

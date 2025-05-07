@@ -1,0 +1,191 @@
+.product-item {
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px #5a3ff6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto 16px auto;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background: #f8f6ff;
+}
+
+.product-info-area {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-title {
+  
+  font-size: 1.1rem;
+  margin: 8px 0 12px 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.product-item a {
+  text-decoration: none;
+}
+
+.product-desc {
+  padding: 0 20px 20px;
+  color: var(--gray);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  flex-grow: 1;
+}
+
+@media (max-width: 1200px) {
+  /* Large tablets and below */
+}
+
+@media (max-width: 900px) {
+  .product-item {
+    width: 100%;
+    max-width: 400px;
+    height: 150px;
+  }
+  .product-img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-item {
+    flex-direction: column;
+    width: 98vw;
+    height: auto;
+    min-width: 0;
+    max-width: 99vw;
+  }
+  .product-img {
+    width: 100%;
+    height: 180px;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+  }
+  .product-info-area {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-item {
+    width: 240px;
+  }
+  .product-img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-section h2 {
+    font-size: 1.1rem;
+    padding: 0 0.5rem;
+    margin-bottom: 1.2rem;
+  }
+  .contact-details, .contact-form {
+    padding: 0.7rem 0.2rem;
+    font-size: 0.98rem;
+  }
+  .form-title {
+    font-size: 1rem;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.7rem 0.7rem;
+    font-size: 0.98rem;
+  }
+  .contact-form button {
+    font-size: 1rem;
+    padding: 0.7rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .why-choose-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+    padding: 0 0.5rem;
+  }
+  .feature-card, .benefit-card {
+    padding: 1.1rem 0.7rem;
+    font-size: 0.98rem;
+    width: 98vw;
+    max-width: 99vw;
+  }
+  .feature-title, .benefit-title {
+    font-size: 1.05rem;
+  }
+  .feature-desc, .benefit-desc {
+    font-size: 0.98rem;
+  }
+  .features-list, .benefits-list {
+    gap: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-item {
+    max-width: 100%;
+  }
+
+  .product-img {
+    height: 200px;
+  }
+}  
+.product-item {
+  border: 1.5px solid #e5e5e5; /* subtle border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.product-item:hover {
+  border-color: #5a3ff6; /* highlight border on hover */
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 24px rgba(90, 63, 246, 0.1); /* add a light colored shadow */
+}
+.product-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  margin: 12px 0 16px;
+  position: relative;
+  line-height: 1.4;
+  padding: 0 1rem;
+  word-break: break-word;
+  transition: color 0.3s ease;
+}
+
+.product-title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+ 
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.product-item:hover .product-title {
+  color: #5a3ff6;
+}

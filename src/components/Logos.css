@@ -1,0 +1,59 @@
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3rem 2rem; /* Increased vertical spacing */
+  width: 100%;
+  box-sizing: border-box;
+  gap: 5rem; /* Moderate space between logos */
+  background: #f8f6ff;
+}
+
+.logos img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(0.2) brightness(0.95);
+  transition: filter 0.2s;
+  max-width: 120px;
+}
+
+.logos img:hover {
+  filter: none;
+}
+
+.large-logo {
+  height: 72px !important;
+  max-width: 160px;
+}
+
+@media (max-width: 900px) {
+  .logos {
+    padding: 2rem 1rem; /* Slightly reduced padding for tablets */
+    gap: 1.5rem;
+  }
+  .logos img {
+    height: 38px;
+    max-width: 90px;
+  }
+  .large-logo {
+    height: 54px !important;
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logos {
+    padding: 3rem 1rem; /* Optimized for smaller screens */
+    gap: 1.5rem;
+  }
+  .logos img {
+    height: 32px;
+    max-width: 70px;
+  }
+  .large-logo {
+    height: 42px !important;
+    max-width: 90px;
+  }
+}

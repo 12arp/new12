@@ -1,0 +1,56 @@
+.footer {
+  background: #5a3ff6;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 0 4rem 0;
+  margin-top: 2rem;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.footer-cta {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.footer-bottom {
+  font-size: 1rem;
+  color: #e2e0f7;
+}
+
+.footer-bottom span {
+  display: block;
+  margin-top: 0.7rem;
+  font-size: 0.95rem;
+  color: #fff;
+} 
+
+.cdlab{
+  background-color: #010326;  /* dark navy like your image */
+  color: #f8f6ff;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-top: 2px solid #5a3ff6; /* top border similar to your image */
+  border-bottom: 2px solid #0099ff; /* optional for bottom blue border */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.heart {
+  color: red;
+  margin: 0 4px;
+}
+.ancor{
+  color:#f8f6ff ;
+}
+
+@media (max-width: 600px) {
+  .wt{
+    height: 70px;
+    background-color: #010326;
+  }
+}
